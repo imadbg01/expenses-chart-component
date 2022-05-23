@@ -25,7 +25,7 @@
 body {
   position: relative;
   min-height: 100vh;
-  font-family: --ff-sans;
+  font-family: var(--ff-sans);
   font-size: var(--ff-base);
   display: flex;
   justify-content: center;
