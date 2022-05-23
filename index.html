@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/script.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        display: none;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="[ card ] [ wrapper ]">
+      <header class="[ header ] [ rounded p-1 ]">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div>
+          <h1 class="[ text-sm ]">
+            My balance <span class="[ block text-lg ]">$921.48</span>
+          </h1>
+        </div>
+      </header>
+
+      <section
+        class="[ flow ] [ bg-white rounded p-1 flex flex-col item-center ]"
+      >
+        <h2 class="self-start text-lg">Spending - Last 7 days</h2>
+        <!-- Dynamic data -->
+        <div data-chart class="[ w-full flex justify-beteween bg-cyam]"></div>
+        <!--  -->
+        <div class="flex justify-between align-center w-full py-1 border-t">
+          <p class="fw-400">
+            Total this month<span class="text-lg block fw-700">$478.33</span>
+          </p>
+
+          <p class="fw-700">
+            +2.4%<span class="block fw-400">from last month</span>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- mon tue wed thu fri sat sun -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
