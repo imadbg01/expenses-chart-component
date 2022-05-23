@@ -6,17 +6,10 @@ fetch("./js/data.json")
     data = json;
 
     let largeset = data.reduce((a, b) => (a.amount > b.amount ? a : b));
-    let id = data.filter((a, idx) => {
-      if (a.amount === largeset.amount) return idx;
-    })[0];
 
-    console.log(largeset.amount);
-    console.log("ID", id);
     const dataChart = document.querySelector("[data-chart]");
 
     data.forEach((el) => {
-      console.log(el.amount);
-
       let newEl = document.createElement("div");
       let chartProgress = document.createElement("div");
       let chartday = document.createElement("p");
