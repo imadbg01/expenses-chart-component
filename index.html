@@ -44,7 +44,7 @@
   </head>
   <body>
     <div class="[ card ] [ wrapper ]">
-      <header class="[ header ] [ rounded p-1 ]">
+      <header class="[ header ] [ rounded p-1 ]" role="banner">
         <div class="logo">
           <img src="./images/logo.svg" alt="" />
         </div>
@@ -57,6 +57,7 @@
 
       <section
         class="[ flow ] [ bg-white rounded p-1 flex flex-col item-center ]"
+        role="main"
       >
         <h2 class="self-start text-lg">Spending - Last 7 days</h2>
         <!-- Dynamic data -->
@@ -73,10 +74,7 @@
         </div>
       </section>
     </div>
-
-    <!-- mon tue wed thu fri sat sun -->
-
-    <div class="attribution">
+    <div class="attribution" role="contentinfo">
       <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
